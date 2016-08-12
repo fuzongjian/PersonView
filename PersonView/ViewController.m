@@ -15,16 +15,18 @@
 @end
 
 @implementation ViewController
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.PersonTableView.tableFooterView = [UIView new];
     
-    self.dataArray = [NSArray arrayWithObjects:@"下来放大效果", nil];
-    self.controllerArray = [NSArray arrayWithObjects:@"DrawBigController", nil];
+    self.dataArray = [NSArray arrayWithObjects:@"下来放大效果",@"导航栏变化",@"导航栏背景颜色变化", nil];
+    self.controllerArray = [NSArray arrayWithObjects:@"DrawBigController",@"BarChangeController",@"BarColorChangeController", nil];
     
     // Do any additional setup after loading the view, typically from a nib.
 }

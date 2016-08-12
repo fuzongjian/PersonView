@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton * backButton = [UIButton buttonWithType:UIButtonTypeSystem];
     backButton.frame = CGRectMake(0, 0, 50, 30);

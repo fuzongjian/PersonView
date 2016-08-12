@@ -17,6 +17,9 @@
 		9B9A4CC81D5D76D000FDA2B1 /* PersonViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A4CC71D5D76D000FDA2B1 /* PersonViewUITests.m */; };
 		9B9A4CE51D5DAD2400FDA2B1 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A4CE41D5DAD2400FDA2B1 /* SuperViewController.m */; };
 		9B9A4CE91D5DAD8500FDA2B1 /* DrawBigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A4CE81D5DAD8500FDA2B1 /* DrawBigController.m */; };
+		9B9A4CED1D5DAE3100FDA2B1 /* BarChangeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A4CEC1D5DAE3100FDA2B1 /* BarChangeController.m */; };
+		9B9A4CF11D5DAE7400FDA2B1 /* UINavigationBar+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A4CF01D5DAE7400FDA2B1 /* UINavigationBar+Custom.m */; };
+		9B9A4CF41D5DB71100FDA2B1 /* BarColorChangeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A4CF31D5DB71100FDA2B1 /* BarColorChangeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		9B9A4CE41D5DAD2400FDA2B1 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
 		9B9A4CE71D5DAD8500FDA2B1 /* DrawBigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawBigController.h; sourceTree = "<group>"; };
 		9B9A4CE81D5DAD8500FDA2B1 /* DrawBigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawBigController.m; sourceTree = "<group>"; };
+		9B9A4CEB1D5DAE3100FDA2B1 /* BarChangeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChangeController.h; sourceTree = "<group>"; };
+		9B9A4CEC1D5DAE3100FDA2B1 /* BarChangeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChangeController.m; sourceTree = "<group>"; };
+		9B9A4CEF1D5DAE7400FDA2B1 /* UINavigationBar+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Custom.h"; sourceTree = "<group>"; };
+		9B9A4CF01D5DAE7400FDA2B1 /* UINavigationBar+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Custom.m"; sourceTree = "<group>"; };
+		9B9A4CF21D5DB71100FDA2B1 /* BarColorChangeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarColorChangeController.h; sourceTree = "<group>"; };
+		9B9A4CF31D5DB71100FDA2B1 /* BarColorChangeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarColorChangeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +179,22 @@
 		9B9A4CEA1D5DADA900FDA2B1 /* BarChangeController */ = {
 			isa = PBXGroup;
 			children = (
+				9B9A4CEE1D5DAE4C00FDA2B1 /* lib */,
+				9B9A4CEB1D5DAE3100FDA2B1 /* BarChangeController.h */,
+				9B9A4CEC1D5DAE3100FDA2B1 /* BarChangeController.m */,
+				9B9A4CF21D5DB71100FDA2B1 /* BarColorChangeController.h */,
+				9B9A4CF31D5DB71100FDA2B1 /* BarColorChangeController.m */,
 			);
 			path = BarChangeController;
+			sourceTree = "<group>";
+		};
+		9B9A4CEE1D5DAE4C00FDA2B1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9B9A4CEF1D5DAE7400FDA2B1 /* UINavigationBar+Custom.h */,
+				9B9A4CF01D5DAE7400FDA2B1 /* UINavigationBar+Custom.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +330,11 @@
 				9B9A4CAA1D5D76CF00FDA2B1 /* ViewController.m in Sources */,
 				9B9A4CE51D5DAD2400FDA2B1 /* SuperViewController.m in Sources */,
 				9B9A4CA71D5D76CF00FDA2B1 /* AppDelegate.m in Sources */,
+				9B9A4CF41D5DB71100FDA2B1 /* BarColorChangeController.m in Sources */,
+				9B9A4CED1D5DAE3100FDA2B1 /* BarChangeController.m in Sources */,
 				9B9A4CA41D5D76CF00FDA2B1 /* main.m in Sources */,
 				9B9A4CE91D5DAD8500FDA2B1 /* DrawBigController.m in Sources */,
+				9B9A4CF11D5DAE7400FDA2B1 /* UINavigationBar+Custom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deltalpha.PersonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deltalpha.PersonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
